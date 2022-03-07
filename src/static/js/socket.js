@@ -1,1 +1,0 @@
-const socket = io.connect('https://' + window.location.hostname + ':5000');

@@ -4,6 +4,8 @@ const inputsList = document.getElementById('inputs')
 const disconnect = document.getElementById('disconnect')
 const connect = document.getElementById('connect')
 
+const socket = io.connect('https://' + window.location.hostname + ':5000');
+
 disconnect.addEventListener('click', () => {
     socket.disconnect()
 })
