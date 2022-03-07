@@ -2,7 +2,7 @@ from flask import Flask
 from routes import main_router
 from flask_wtf import CSRFProtect
 
-from flask_socketio import SocketIO, send, emit
+from flask_socketio import SocketIO, send, emit # https://socket.io/docs/v3/, https://flask-socketio.readthedocs.io/en/latest/intro.html
 import os
 from datetime import datetime
 
