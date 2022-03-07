@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sockets</title>
+
+    <script type="text/javascript" src="{{ url_for('static', filename='js/input.js') }}" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js" integrity="sha512-MgkNs0gNdrnOM7k+0L+wgiRc5aLgl74sJQKbIWegVIMvVGPc1+gc1L2oK9Wf/D9pq58eqIJAxOonYPVE5UwUFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/socket.js') }}" defer></script>
+</head>
+
+<body>
+    <div id="input-container">
+        <input id="input-text" type="text"/>
+        <input id="input-submit" type="submit"/>
+        <input id="disconnect" type="button" value="DISCONNECT FROM SOCKET"/>
+        <input id="connect" type="button" value="CONNECT TO SOCKET"/>
+    </div>
+    <div id="inputs">
+
+    </div>
+</body>
+
+</html>
